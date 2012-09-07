@@ -1,5 +1,9 @@
 bin
 obj
+Logs
+.DS_Store
 *.user
 *.suo
 *.Publish.xml
+*.InstallLog
+_ReSharper.*
