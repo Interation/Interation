@@ -1,5 +1,5 @@
 ﻿using System;
-using BeIT.MemCached;
+using Memcached.ClientLibrary;
 
 namespace Interation.Caching
 {
@@ -9,7 +9,7 @@ namespace Interation.Caching
 
         public MemcachedCachePolicy()
         {
-            _memcachedClient = MemcachedClient.GetInstance("MemcachedConfig");
+            _memcachedClient = memcachedClient;
         }
 
         public void Add<T>(string key, T value)
